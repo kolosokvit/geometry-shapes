@@ -13,4 +13,31 @@ public class ShapeUtil {
     public Rectangle createRandomRectangle() {
         return new Rectangle("Rectangle", random.nextDouble(10), random.nextDouble(10));
     }
+
+    public Shape createRandomShape() {
+        int shapeIndex = random.nextInt(3);
+        if (shapeIndex == 0) {
+            return createRandomSquare();
+        } else if (shapeIndex == 1) {
+            return createRandomRectangle();
+        } else {
+            return createRandomCircle();
+        }
+    }
+
+    public double calculateArea(Shape[] shapes) {
+        double totalArea = 0;
+        for (Shape shape : shapes) {
+            totalArea += shape.calculateArea();
+        }
+        return totalArea;
+    }
+
+    public double calculatePerimeter(Shape[] shapes) {
+        double totalPerimeter = 0;
+        for (Shape shape : shapes) {
+            totalPerimeter += shape.calculatePerimeter();
+        }
+        return totalPerimeter;
+    }
 }
