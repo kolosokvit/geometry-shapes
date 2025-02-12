@@ -1,3 +1,5 @@
+package geometryshapes;
+
 public class Square extends Shape {
     private double side;
 
@@ -7,12 +9,12 @@ public class Square extends Shape {
     }
 
     @Override
-    double calculateArea() {
+    public double calculateArea() {
         return side * side;
     }
 
     @Override
-    double calculatePerimeter() {
+    public double calculatePerimeter() {
         return 4 * side;
     }
 }

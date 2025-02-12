@@ -1,3 +1,5 @@
+package geometryshapes;
+
 import java.util.Random;
 
 public class ShapeUtil {
@@ -39,5 +41,13 @@ public class ShapeUtil {
             totalPerimeter += shape.calculatePerimeter();
         }
         return totalPerimeter;
+    }
+
+    public double calculateArea(Shape shape) {
+        return shape.calculateArea();
+    }
+
+    public double calculatePerimeter(Shape shape) {
+        return shape.calculatePerimeter();
     }
 }

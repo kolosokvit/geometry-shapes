@@ -1,3 +1,5 @@
+package geometryshapes;
+
 public abstract class Shape {
     private String title;
 

@@ -1,3 +1,5 @@
+package geometryshapes;
+
 public class Circle extends Shape {
     private double radius;
 
@@ -7,12 +9,12 @@ public class Circle extends Shape {
     }
 
     @Override
-    double calculateArea() {
+    public double calculateArea() {
         return Math.PI * Math.pow(radius, 2);
     }
 
     @Override
-    double calculatePerimeter() {
+    public double calculatePerimeter() {
         return 2 * Math.PI * radius;
     }
 }
